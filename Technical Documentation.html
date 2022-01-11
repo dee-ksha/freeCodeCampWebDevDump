@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Technical Doctumentation Page </title>
+    </head>
+    <style>
+        body{
+            display: flex;
+            background-color:#e3e2df;
+        }
+        #navbar{
+            background-color: #9a1750;
+            color: #e3e2df;
+            height: 1000px;
+            width: 300px;
+            top: 0px;
+            left: 0px;
+            position: fixed;
+            border-right: whitesmoke solid 3px;
+            font-size: 22px;
+        }
+        #navbar li {
+  list-style: none;
+  width: 100%;
+}
+
+        #navbar a{
+            color: white;
+            display: block;
+            padding: 10px 20px;
+        }
+        #navbar header{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding: 15px 5px 10px 5px;
+        }
+        header{
+            color:#9a1750;
+            font-size: 28px;
+            font-weight: 500;
+         }
+        
+         p{
+             font-size: 16px;
+             line-height: 22px;
+         }
+        main{
+            width: 800px;
+            margin-left: 400px;
+            
+        }
+        h2{
+            font-size: 18px;
+            font-weight: 400px;
+            line-height: 12px;
+        }
+        li{
+            line-height: 22px;
+        }
+        code {
+  display: block;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+  white-space: pre-line;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+
+    </style>
+    <body>
+        <nav id="navbar">
+            <header>Python Documentation</header> <hr>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Why_Python?">Why Python?</a></li>
+                <li><a class="nav-link" href="#Features_Of_Python">Features Of Python</a></li>
+                <li><a class="nav-link" href="#Python_Fundamentals">Python Fundamentals</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Operators">Operators</a></li>
+                <li><a class="nav-link" href="#Decision_Making_Statements">Decision Making Statements</a></li>
+                <li><a class="nav-link" href="#Iterative_Statements">Iterative Statements</a></li>
+                <li><a class="nav-link" href="#References">References</a></li>
+            </ul>
+        </nav>
+        <div>
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
+                     <p>Python is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries and is extensible to C or C++. Many large companies use the Python programming language, including NASA, Google, YouTube, BitTorrent, etc.</p>
+                     <p>It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                </section>
+                <br>
+                <section class="main-section" id="Why_Python?">
+                    <header>Why Python?</header>
+                    <ul>
+                        <li>Python has a simple syntax similar to the English language.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>It can be used for web development, software development, mathematics and system scripting.</li>
+                        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                        <li>It can be used to handle big data and perform complex mathematics.</li>
+                    </ul>
+                </section>
+                <br>
+                <section class="main-section" id="Features_Of_Python">
+                    <header>Features Of Python</header>
+                    <p>There are many programming languages, and each language has its own specialities but what makes a language unique is its features. Some of the features of Python are:</p>
+                    <h2>Easy To Use</h2> <p>Python is a developer-friendly language and it is very easy to learn as compared to other languages like C, C#, Javascript, Java, etc.</p>
+                    <h2>Free and Open Source</h2> <p>Python is freely available. This means that any one can download and install it on their machine, <i>i.e.</i>,you don't have to buy it, and don't need a license to use it. Python is Open Source which means that it's source code is available to the public. You can download it, use it, change it and redistribute it.</p>
+                    <h2>Dynamically Programmed</h2> <p>Python is a dynamically-typed language. That means the type of a variable is decided at runtime not in advance, because of this feature we don’t need to declare/specify the type of variable.</p>
+                    <h2>Portable</h2> <p>Python language is a portable language. This means that the code written for one machine can be executed/run on any other machine without any change. For example, if we have python code for windows and if we want to run this code on other platforms such as Linux, Unix, and Mac then we do not need to change it, we can run this code on any platform.</p>
+                    <h2>Interpreted</h2> <p>Python is an Interpreted Language because Python code is executed line by line at a time. like other languages C, C++, Java, etc. there is no need to compile python code this makes it easier to debug our code. The source code of python is converted into an immediate form called bytecode.</p>
+                </section>
+                <br>
+                <section class="main-section" id="Python_Fundamentals">
+                    <header>Python Fundamentals</header> <br>
+                    <h2>Python Indentation</h2> <p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.Python uses indentation to highlight the blocks of code. Whitespace is used for indentation in Python. All statements with the same distance to the right belong to the same block of code. If a block has to be more deeply nested, it is simply indented further to the right.</p>
+                                                 <code>if 5 > 2:
+                                                    &#8287;  &#8287; print("Five is greater than two!")</code>
+                                                    <p>For Example: In the above piece of code, the space to the left of the print statement indicates that it belongs to the if condition block. Python will give you an error if you skip the indentation.</p>
+                   <br> <h2>Characters</h2> <p>Every Python program is a sequence of characters. When these characters are submitted to the Python Interpreter, they are interpreted in various contexts such as keywords, identifiers, constants and statements. Character set of Python is a set of all those characters it can recognize and these can be grouped as Letters, Digits, Special Characters and White Space Characters.</p>
+                                        <p>Note: The Python interpreter ignores white space characters, except the leading spaces used for indentation. These white characters are basically used to enhance the readability and understandability of a Python Program.</p>
+                </section> <br>
+                <section class="main-section" id="Variables">
+                    <header>Variables</header>
+                    <p>Variables are the containers for storing data values. Python is dynamically typed therefore, we do not need to declare variables before using them or declare their type. A variable is created the moment we first assign a value to it. A variable is a name given to a memory location. It is the basic unit of storage in a program.
+                      <ul>
+                          <li>The value stored in a variable can be changed during program execution.</li>
+                          <li>A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.</li>
+                      </ul>
+                    </p>
+                <h2>Rules for creating Variables in Python</h2> <p><ul><li>A variable name must start with a letter or the underscore character.</li>
+                <li>A variable name cannot start with a number.</li> <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).</li>  
+            <li>Variable names are case-sensitive (name, Name and NAME are three different variables).</li> <li>The reserved words(keywords) cannot be used naming the variable.</li>             </ul></p>
+                </section> <br>
+                <section class="main-section" id="Data_Types">
+                    <header>Data Types</header>
+                    <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.</p>
+                    <p>Variables can store data of different types, and different types can do different things. Python has the following data types built-in by default, in these categories:</p>
+                  <code>  <table style="width: 100%;">
+                      <tr>
+                          <th>Text Type</th>
+                          <th>str</th>
+                      </tr>
+                      <tr>
+                          <th>Numeric Type</th>
+                          <th>int, float, complex</th>
+                      </tr>
+                      <tr>
+                          <th>Sequence Type</th>
+                          <th>list, range, tuple</th>
+                      </tr>
+                      <tr>
+                          <th>Mapping Type</th>
+                          <th>dict</th>
+                      </tr>
+                      <tr>
+                          <th>Set Type</th>
+                          <th>set, frozenset</th>
+                      </tr>
+                      <tr>
+                          <th>Boolean Type</th>
+                          <th>bool</th>
+                      </tr>
+                      <tr>
+                          <th>Binary Type</th>
+                          <th>bytes, bytearray, memoryview</th>
+                      </tr>
+                    </table> </code>
+                  <p>Note: type() function is used to determine the type of data type. You can get the data type of any object by using the type() function.</p>
+                  <p>For Example: To print the data type of the variable x</p>
+                  <code>x = 5
+                 print(type(x))</code>
+                    <p>Output: </p>
+                    <code>< class 'int' ></class></code>
+                </section> <br>
+                <section class="main-section" id="Operators">
+                    <header>Operators</header>
+                     <p>Operators are used to perform operations on variables and values. These are standard symbols used for the purpose of logical and arithmetic operations. Python divides the operators in the following groups:</p>
+                     <code>  <table style="width: 100%;">
+                        <tr>
+                            <th>Arithmetic Operators</th>
+                            <th>+  -  *  /  %  **  //</th>
+                        </tr>
+                        <tr>
+                            <th>Assignment Operators</th>
+                            <th>=  +=  -=  *=  /=  %=  //=  **=  &=  |=  ^=  >>=  <<=</th>
+                        </tr>
+                        <tr>
+                            <th>Logical Operators</th>
+                            <th>and &#8287;or&#8287; not</th>
+                        </tr>
+                        <tr>
+                            <th>Identity Operators</th>
+                            <th>is &#8287; is not</th>
+                        </tr>
+                        <tr>
+                            <th>Comparison Operators</th>
+                            <th>==  !=  >  <  >=  <=</th>
+                        </tr>
+                        <tr>
+                            <th>Membership Operators</th>
+                            <th>in &#8287; not in</th>
+                        </tr>
+                        <tr>
+                            <th>Bitwise Operators</th>
+                            <th>& | ^ ~ << >></th>
+                        </tr>
+                      </table>    </code>
+                    
+                    <p>For Example:</p>
+                    <code>a = 9
+                        b = 4
+
+                        # Multiplication of number
+                        mul = a * b
+                        print(mul)
+
+                        # Relational Operator
+                        print(a == b)
+
+                        # Identity Operator
+                        print(a is not b) 
+                    </code>
+                    <p>Output:</p>
+                    <code> 36
+                        False
+                        True
+                    </code>
+                    </section> <br>
+                <section class="main-section" id="Decision_Making_Statements">
+                    <header>Decision Making Statements</header>
+                     <p>There comes situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code.
+                        Decision-making statements in programming languages decide the direction of the flow of program execution.</p>
+                     <h2>if statement</h2> <p>if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.</p>
+                    <p>For Example</p>
+                    <code>a = 33
+                        b = 200
+                        if b > a:
+                        &#8287; &#8287;print("b is greater than a")</code>
+                        <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+                        <p>Output:</p>
+                        <code> b is greater than a
+                        </code>
+                    </section> <br>
+                <section class="main-section" id="Iterative_Statements">
+                    <header>Iterative Statements</header>
+                    <p>Python has two primitive loop commands:
+                        <ul><li>for loop</li>
+                        <li>while loop</li></ul>
+                    </p>
+                    <h2>The for loop</h2> <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+                        This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+                        <p>For Example</p>
+                        <code># Python program to illustrate iteration over range 0 to n-1
+                             n = 5
+                            for i in range(0, n):
+                            &#8287;&#8287;   print(i)
+                        </code>
+                        <p>Output</p>
+                        <code>0
+                            1
+                            2
+                            3
+                            4
+                        </code>
+                    <h2>The while loop</h2> <p>In python, while loop is used to execute a block of statements repeatedly until a given a condition is satisfied. And when the condition becomes false, the line immediately after the loop in program is executed. </p>
+                     <p>For Example:</p>
+                     <code># Python program to illustrate while loop
+                        count = 0
+                        while (count < 3):   
+                        &#8287; &#8287; count = count + 1
+                        &#8287; &#8287; print("Hello there")
+                     </code>
+                     <p>Output:</p>
+                     <code>Hello there
+                         Hello there
+                         Hello there
+                     </code>
+                </section> <br>
+                <section class="main-section" id="References">
+                    <header>References</header>
+                     <p>All the documentation in this page is taken from  <a href="https://www.w3schools.com/PYTHON/default.asp" target="_blank"> w3schools </a>  &#8287;and <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank"> GeeksforGeeks </a>. </p>
+                </section>
+            </main>
+        </div>
+    </body>
+     </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> FCC Survey Form </title>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&family=Vollkorn&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            background-color: #6fb3b8;
+            
+        }
+        h1{
+            font-family: 'Vollkorn', serif;
+            font-weight: 650;
+            font-size: 35px;
+        }
+        .header{
+            margin-left: 100px;
+            margin-top: 30px;
+            background-color: #6fb3b8;
+            width: 600px;
+            height: 130px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0), 0 6px 6px rgba(0,0,0,0.23);
+            padding-top: 5px;
+            color: white;
+            border-radius: 10px;
+        }
+        .pgborder{
+            background-color: whitesmoke;
+            margin: 40px 200px 40px 230px;
+            height: 1100px;
+            width: 800px;
+            padding-top: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.493);
+        
+        }
+
+        .form-group{
+            margin-top: 80px;
+            margin-left: 70px;
+            line-height: 25px;
+            font-size: medium;
+            font-weight: 545;
+            font-size: 18px;
+        }
+    
+
+        
+
+        #name{
+            width: 350px;
+            height: 25px;
+            border-radius: 2px;
+            font-size: 14px;
+            
+         }
+        
+        #email{
+            width: 350px;
+            height: 25px;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+        #number{
+            width: 150px;
+            height: 25px;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+        #dropdown{
+            width: 170px;
+            height: 25px;
+            border-radius: 5px;
+            font-weight: 450;
+            
+        }
+
+        textarea{
+            width: 450px;
+            height: 100px;
+            border-radius: 10px;
+            border-color: black;
+        
+        }
+        
+        p{
+            font-size: 16.5px;
+        }
+        #submit{
+            width: 110px;
+            height: 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        
+        }
+        #description{ font-family: 'Merienda', cursive; 
+             }
+        .textt{
+            font-size: 18.5px;
+          line-height: 30px;
+        }
+        
+        
+    </style>
+    <body>
+        <div class="pgborder">
+
+        <header class="header">
+            <h1 id="title"> Free Code Camp Survey Form </h1>
+            <p id="description"> Thank You For Helping Us Improve! </p>
+        </header>
+        <div class="form-group">
+        <form id="survey-form">
+            <label id="name-label" for="name"> Name </label> <br>
+            <input type="text" placeholder="Enter your Name" id="name" name="name" required> <br> <br>
+            <label id="email-label" for="email"> E-mail Address </label> <br>
+            <input type="email" placeholder="Enter your E-mail Address" id="email" name="email" required> <br> <br>
+            <label id="number-label" for="number"> How old are you? </label> <br>
+            <input type="number" max="100" min="13" placeholder="Age" id="number" name="number" required> <br> <br>
+          <div class="textt"> <label for="role"> Which option best decsribes your current role?</label></div>
+            <select name="role" id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Prefer Not to Say"> Prefer Not to Say</option>
+                <option value="Other">Other</option>
+            </select>
+            <br> <br>
+            <div style="font-size: 17px;">
+            <div class="textt">Has Free Code Camp helped you in developing and improving your skills? </div>
+            <input type="radio" name="views" value="Definitely" checked>
+            <label for="Definitely">Definitely</label> <br>
+            <input type="radio" name="views" value="Maybe">
+            <label for="Maybe">Maybe</label> <br>
+            <input type="radio" name="views" value="Not Really">
+            <label for="Not Really">Not Really</label> <br>
+            </div>
+            <br>
+            <div class="textt">
+                Which features would you like to see improved? <br> </div>
+                <label>
+                    <div style="font-size: 17px;">
+            <input type="checkbox" name="preference" value="Challenges">Challenges</label> <br>
+            <label> <input type="checkbox" name="preference" value="Front-end Projects">Front-end Projects</label> <br>
+            <label> <input type="checkbox" name="preference" value="Back-end Projects">Back-end Projects</label> <br>
+            <label> <input type="checkbox" name="preference" value="Open Source Community">Open Source Community</label><br>
+            <label> <input type="checkbox" name="preference" value="Additional Courses">Additional Courses</label> <br>
+                    </div>
+            <div class="textt"><p> Any Additional Comments or suggestions?</p>
+            <textarea name="comment" placeholder="Enter Your Comments Here!"> </textarea> </div> <br>
+            <button type="submit" id="submit"> Submit </button>
+
+        </form>
+        </div>
+        </div>
+    </body>
+    </html>

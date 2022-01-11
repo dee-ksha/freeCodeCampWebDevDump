@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Vollkorn&display=swap" rel="stylesheet">
+      
+<title> Product landing page </title>
+    </head>
+     <style>
+           body{
+               margin: 0px;
+           }
+
+         #bg-img{
+            width:100%;
+          height: 420px;
+          margin-top: 40px;
+          margin-left: 0px;
+          
+         }
+         #header{
+          background-color: black;
+          left: 0px;
+          
+      }
+        
+      @media (max-width: 100px) { #nav-bar{
+          position: fixed;
+      }}
+      #left{
+        
+          color: white;
+      }
+      .center1{
+        position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color:whitesmoke;
+  font-family: 'Crimson Text', serif;
+  
+      }
+     
+      #right{
+        margin-left: 550px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: 'Vollkorn', serif;
+      }
+      .heading{
+          text-align: center;
+          font-size: 35px;
+          margin-top: 40px;
+          font-family: 'Vollkorn', serif;
+      }
+      #Design{
+          display: flex;
+          height: 90px;
+          font-size: 25px;
+          padding-top: 120px;
+      }
+      a{
+          margin-left: 90px;
+          margin-top: 70px;
+      }
+      iframe{
+          margin-top: 100px;
+      }
+      p{
+          font-size: 16px;
+          margin-left: 120px;
+          line-height: 20px;
+      }
+      #video{
+         margin-left: 170px;
+    
+     }
+
+    #textbox{
+        width: 550px;
+        margin-top: 100px;
+        line-height: 25px;
+        height: 500px;
+        margin-left: 100px;
+        font-size: 19px;
+        font-weight: 550px;        
+    }
+    #textbox a{
+        margin-left: 50px;
+    }
+     #features{display:flex;
+        margin-top: 50px;
+    }
+     .cardd{
+         margin-top: 100px;
+         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+         width: 250px;
+         height: 260px;
+         margin-left: 80px;
+         font-size: 17px;
+         padding: 25px;
+         line-height: 25px;
+     }
+      #px360 img{
+          width: 400px;
+          height: 250px;
+          margin-top: 100px;
+          margin-left: 100px;
+        
+      }
+      #pricing{
+          margin-top: 40px;
+          display: flex;
+          font-size: 18px;
+          line-height: 22px;
+          height: 400px;
+          
+      }
+      #pricing h2{
+          text-align: center;
+          font-size: 23px;
+      }
+    
+ form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    margin-top: 100px;
+ }
+ #submit{
+     width: 200px;
+     margin-left: 490px;
+     height: 35px;
+     margin-top: 15px;
+     border: 3px black solid;
+  border-radius: 2px;
+  background-color: white;;
+  
+ }
+ #email{
+     margin-top: 50px;
+    width: 370px;
+    height: 45px;
+     margin-left: 400px;
+     border: 3px black solid;
+  border-radius: 2px;
+  background-color: white;
+  text-align: center;
+ }
+ ::placeholder{
+     color:black;
+;
+     font-weight: 700;
+ }
+ #header-img{
+     height: 40px;
+     width: 60px;
+     margin-top: 15px;
+     margin-left: 15px;
+ }
+
+
+#nav-bar{
+    color: white;
+    position: fixed;
+
+}
+#nav-bar{ display: flex;
+        position: fixed;
+    background-color: black;
+top: 0px;
+width: 100%;
+left:0px}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+     </style>
+    <body>
+      <header id="header">
+        <nav id="nav-bar">
+            <div id="left"> <img id="header-img" src="data:image/png;base64,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"> 
+            </div>
+            
+            <div id="right">
+             
+                 <a class="nav-link" href="#Design">Design</a>
+                 <a class="nav-link" href="#features">Features</a>
+                 <a class="nav-link" href="#pricing">Pricing</a>
+              
+             </nav>
+      </header>
+      <section id="imgsec">
+        <img id="bg-img" src="https://images.wallpaperscraft.com/image/single/laptop_backlight_colorful_194324_1920x1080.jpg">
+        <div class="center1"> Make it Matter Keep Reinventing!</div>
+        
+      </section>
+      <div class="heading"> HP x360 Pavilion Convertible PC </div>
+      <br>
+     <section id="Design">
+       <br> <br> <br>
+       <div class="rowt"> <a class="Design-icons"><span class="material-icons">
+            laptop
+            </span>&#8287; &#8287;Display</a> 
+            <p>14.00-inch <br>touch screen</p>
+        </div>
+
+    3        <div class="row"><a class="Design-icons"><span class="material-icons">
+                memory
+                </span> &#8287;&#8287;Processor</a>
+                <p>11th Generation Intel <br>Core  i5-1135G7 </p></div>
+                <div class="row"><a class="Design-icons"><span class="material-icons">
+                hd
+                </span>&#8287;&#8287;Graphics</a>
+                <p>Intel Integrated <br> HD Graphics 520</p></div>
+                <div class="row"><a class="Design-icons"><span class="material-icons">
+                sd_storage
+                </span>&#8287;&#8287;Memory</a>
+              <p>4GB, 1x4GB, <br>DDR4, 3200MHz</p></div>
+                <div class="row"><a class="Design-icons"><span class="material-icons">
+                laptop_chromebook
+                </span>&#8287;&#8287;Resolution</a>
+                <p>1920x1080 pixels</p></div>
+          
+       </div>
+      
+     </section>
+     <section id="features">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Mgtlkdpb0dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="cardd">
+       <br> The HP Pavilion x360 is often regarded as the best HP laptop for college students as it boasts of a stylish Design and has all the power you need for nonstop use.
+        <br><br><h3>You can learn more about it from the linked video.</h3>
+    </div>
+    </section>
+     <section id="pricing">
+         
+             <div id="textbox">             <ul>
+                 <li>Operating System & Preinstalled Software: Windows 10 Home | Microsoft Office Home & Student 2019</li>
+                  <li>Warranty: This genuine HP laptop comes with 1-year domestic warranty from HP covering manufacturing defects and not covering physical damage.</li>
+                  <li>Ready to ship - Fast and Free Delivery</li>
+                  <br>
+                </ul>
+                
+              
+            <h2> Price: ₹78,900.00 </h2>
+                </div>
+                
+                <div id="px360"> <img src="https://images-na.ssl-images-amazon.com/images/I/81HbaBmmvNS._AC_SL520_.jpg">
+         </div>
+
+     </section>
+
+     <section id="form-elements">
+         <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          >
+          <input  id="submit" type="submit" value="Get Started">
+
+
+         </form>
+     </section>
+
+    </body>
+</html>
